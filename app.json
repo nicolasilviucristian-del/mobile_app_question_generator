@@ -10,6 +10,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.snicola.appcapacitate",
+      "softwareKeyboardLayoutMode": "resize",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -20,6 +22,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "29a91ffa-bfff-40ef-a631-dabd89f040cc"
+      }
+    },
+    "plugins": [
+      "expo-status-bar",
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Permite aplicației să folosească microfonul pentru conversația vocală cu Șoricelul Înțelept."
+        }
+      ]
+    ]
   }
 }
